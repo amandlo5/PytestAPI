@@ -27,7 +27,7 @@ def test_getValidate(apis_client,load_res_data):
     print(res['name'])
 
 
-
+#to create data
 def test_postValidate(apis_client,load_user_data):
     user_data = load_user_data['new_user']
     user_data['email'] = ''.join(random.choices(string.ascii_lowercase,k=6))+'@gmail.com'
