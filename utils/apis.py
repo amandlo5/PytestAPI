@@ -8,6 +8,7 @@ class APIS:
             "Content-Type": "application/json"
         }
 
+    #to get
     def getRequest(self, endpoint):
         url = f"{self.BASE_URL}/{endpoint}"
         response = requests.get(url, headers=self.headers)
