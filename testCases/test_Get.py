@@ -36,6 +36,7 @@ def test_postValidate(apis_client,load_user_data):
     print("------****---------------------")
     assert response.status_code == 201
 
+#to update data
 def test_putValidate(apis_client):
     data = {
         "name": "Amol143",
