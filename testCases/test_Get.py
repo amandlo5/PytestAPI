@@ -51,6 +51,7 @@ def test_putValidate(apis_client):
     response = apis_client.getRequest('users')
     print(response.json())
 
+#to delete data
 def test_deleteValidate(apis_client):
     response = apis_client.deleteRequest("users/10")
     print(response.status_code)
