@@ -10,7 +10,7 @@ from utils.apis import APIS  # Corrected the import statement to match the class
 @pytest.fixture(scope="module")
 def apis_client():
     return APIS()
-
+#to get data
 def test_getValidate(apis_client,load_res_data):
     response = apis_client.getRequest('users')
     print(response.json())
