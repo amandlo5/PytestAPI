@@ -7,6 +7,7 @@ import pytest
 import requests
 from utils.apis import APIS  # Corrected the import statement to match the class file name
 
+#pytest fixture
 @pytest.fixture(scope="module")
 def apis_client():
     return APIS()
